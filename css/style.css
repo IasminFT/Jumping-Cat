@@ -17,13 +17,14 @@
     position: absolute;
     bottom: 0;
     width: 60px;
-    animation: pipe-animation 2s infinite linear; /*infinitamente, sem aceleração*/
+    animation: pipe-animation 1.5s infinite linear; /*infinitamente, sem aceleração*/
 }
 
 .cat-walking{
     position: absolute;
     width: 240px;
     bottom: -45px;
+
 }
 
 .jump{
