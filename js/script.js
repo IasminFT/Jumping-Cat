@@ -12,6 +12,9 @@ const jump = () => {
 }
 
 const loop = setInterval(() => {
+
+    console.log('loop');
+
     const pipePosition = pipe.offsetLeft;
     const catPosition = +window.getComputedStyle(cat_walking).bottom.replace('px', '');
 
@@ -29,11 +32,14 @@ const loop = setInterval(() => {
         cat_walking.style.bottom = `${catPosition}px`;
         // manter cat no local onde ele estava ao encostar em pipe
 
+        //adicionando e estilizando imagem de gameover
         cat_walking.src = './files/cat-gameover-200px.png';
-    }
+        cat_walking.style.marginBottom = '-30px'; 
+        cat_walking.style.marginLeft = '-15px'; 
 
+        clearInterval(loop); // quando acaba o jogo, o loop para de rodar
+    }  
 
-
-},10);
+},10);  
 
 document.addEventListener('keydown', jump); 
