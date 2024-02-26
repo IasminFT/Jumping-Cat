@@ -16,7 +16,7 @@
 .pipe{
     position: absolute;
     bottom: 0;
-    width: 80px;
+    width: 60px;
     animation: pipe-animation 2s infinite linear; /*infinitamente, sem aceleração*/
 }
 
@@ -27,7 +27,7 @@
 }
 
 .jump{
-    animation: jump 500ms ease-out;
+    animation: jump 700ms ease-out;
 }
 
 @keyframes pipe-animation{ /*ir de 0 a 100% durante a animação*/
@@ -44,7 +44,7 @@
         bottom: -45px;
     }
 
-    40%{
+    40%{ 
         bottom: 150px;
     }
 
