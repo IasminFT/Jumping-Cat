@@ -9,4 +9,27 @@
     height: 500px;
     border: 1px solid #333;
     margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.pipe{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    right: -80px; /*Para que animação comece fora da tela, entrando conforme surge*/
+    animation: pipe-animation 2s infinite linear; /*infinitamente, sem aceleração*/
+}
+
+.cat-walking{
+    width: 240px;
+}
+
+@keyframes pipe-animation{ /*ir de 0 a 100% durante a animação*/
+    from{
+        right: 0;
+    }
+    to{
+        right: 100%;
+    }
 }
