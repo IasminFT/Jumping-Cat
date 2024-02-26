@@ -18,12 +18,18 @@ const loop = setInterval(() => {
     console.log(catPosition);
     
     if(pipePosition <= 145 && pipePosition > 0 && catPosition < 30){
+        
         pipe.style.animation = 'none';
         // ao encostar pipe e cat, a animação do pipe para
         pipe.style.left = `${pipePosition}px`;
         // manter pipe no local onde ele estava ao encostar em cat
+        
+        cat_walking.style.animation = 'none';
+        // ao encostar pipe e cat, a animação do cat para
+        cat_walking.style.bottom = `${catPosition}px`;
+        // manter cat no local onde ele estava ao encostar em pipe
 
-
+        cat_walking.src = './files/cat-gameover-200px.png';
     }
 
 
