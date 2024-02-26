@@ -18,7 +18,7 @@
     position: absolute;
     width: 300px;
     margin-top: 50px;
-    animation: clouds-animation 10s infinite linear;
+    animation: clouds-animation 20s infinite linear;
 }
 
 .pipe{
@@ -41,7 +41,7 @@
 
 @keyframes clouds-animation {
     from {
-        right: 0;
+        right: -300px;
     }
 
     to{

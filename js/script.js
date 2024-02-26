@@ -9,6 +9,8 @@ const jump = () => {
         // para que o jump possa ser acionado diversas vezes
     }, 700);
 
+    
+
 }
 
 const loop = setInterval(() => {
